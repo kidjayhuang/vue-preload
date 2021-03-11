@@ -1,5 +1,5 @@
 {
-  "name": "@kidjay/vue-preload",
+  "name": "@kidjayhuang/vue-preload",
   "version": "0.0.3",
   "description": "基于vue的页面预加载器",
   "main": "dist/vue-preload.cjs.js",

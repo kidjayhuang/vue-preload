@@ -1,4 +1,4 @@
-# @kidjay/vue-preload
+# @kidjayhuang/vue-preload
 
 基于vue-router & dynamic import的页面预加载器
 
@@ -11,7 +11,7 @@ v0.0.1
 ## 安装
 
 ``` bash
-npm install @kidjay/vue-preload
+npm install @kidjayhuang/vue-preload
 ```
 ## 背景
 路由组件使用动态import，webpack会将单页面组件分成多个包，在执行路由跳转前才去加载资源，下载完才会跳转，这个包的
@@ -27,7 +27,7 @@ npm install @kidjay/vue-preload
 
 #### 引入
 ``` js
-import VuePreload from '@kidjay/vue-preload';
+import VuePreload from '@kidjayhuang/vue-preload';
 
 Vue.use(VuePreload);
 ```
