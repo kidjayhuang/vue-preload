@@ -1,18 +1,12 @@
-# @wesure/ws-vue-preload
+# @kidjay/vue-preload
 
-基于wesure-cli脚手架的页面预加载器
+基于vue-router & dynamic import的页面预加载器
 
 
 ## 版本
 
 v0.0.1
 
-
-## 环境配置
-
-``` bash
-$ npm config set registry http://nexus.inwesure.com/repository/npm-group/
-```
 
 ## 安装
 
@@ -38,24 +32,23 @@ import wsVuePreload from '@wesure/ws-vue-preload';
 Vue.use(wsVuePreload);
 ```
 
-使用方式一. 配置路由meta.preload属性，以下配置表示在home页会预加载bindCar页的数据
+使用方式一. 配置路由meta.preload属性，以下配置表示在home页会预加载large页的代码包
 ```js
  {
     name: 'home',
     path: '/home',
     meta: {
-        title: '车险实名',
-        preload: 'bindCar'
+        preload: 'large'
     },
     component: () => import(/* webpackChunkName: "home" */ '@/pages/home/index.vue'),
 },
 ```
 
-使用方式二.自定义时机执行 this.$preload('bindCar')
+使用方式二.自定义时机执行 this.$preload('large')
 ```js
 methods: {
-    bindCarPreload() {
-        this.$preload('bindCar')
+    preload() {
+        this.$preload('large')
     }
 },
 ```
