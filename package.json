@@ -1,0 +1,72 @@
+{
+  "name": "@wesure/ws-vue-preload",
+  "version": "0.0.3",
+  "description": "基于vue的页面预加载器",
+  "main": "dist/ws-vue-preload.cjs.js",
+  "module": "dist/ws-vue-preload.esm.js",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "nodemon examples/server.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:cover": "jest --coverage",
+    "build": "rollup -c & tsc --emitDeclarationOnly",
+    "preversion": "npm run test",
+    "version": "npm run build && git add -A",
+    "postversion": "git push && git push --tags && npm publish",
+    "pub:patch": "npm version patch",
+    "pub:minor": "npm version minor",
+    "pub:major": "npm version major",
+    "type-check": "tsc --noEmit",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:watch": "rollup -c --watch & tsc --emitDeclarationOnly --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.inwesure.com:AT-web-packages/ws-vue-preload.git"
+  },
+  "keywords": [],
+  "author": "kidjayhuang",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://nexus.inwesure.com/repository/npm-hosted/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-runtime": "^7.12.17",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-typescript": "^7.8.3",
+    "@babel/runtime-corejs3": "^7.12.18",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@types/jest": "^26.0.20",
+    "@wesure/eslint-config": "^0.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "es6-promise": "^4.2.8",
+    "eslint": "^7.18.0",
+    "express": "^4.17.1",
+    "express-urlrewrite": "^1.4.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.7",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^3.7.5",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6",
+    "vue-router": "^3.5.1",
+    "vue-server-renderer": "^2.6.12",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.28.4",
+    "webpack-dev-middleware": "^3.7.0"
+  },
+  "dependencies": {}
+}
