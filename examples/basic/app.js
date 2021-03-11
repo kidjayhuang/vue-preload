@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
-import WsVuePreload from 'ws-vue-preload';
+import VuePreload from 'vue-preload';
 // import Foo from './components/foo.vue';
 // import Bar from './components/bar.vue';
 
-Vue.use(WsVuePreload);
+Vue.use(VuePreload);
 Vue.use(VueRouter);
 const router = new VueRouter({
   mode: 'history',

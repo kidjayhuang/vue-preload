@@ -1,9 +1,9 @@
 {
-  "name": "@wesure/ws-vue-preload",
+  "name": "@kidjay/vue-preload",
   "version": "0.0.3",
   "description": "基于vue的页面预加载器",
-  "main": "dist/ws-vue-preload.cjs.js",
-  "module": "dist/ws-vue-preload.esm.js",
+  "main": "dist/vue-preload.cjs.js",
+  "module": "dist/vue-preload.esm.js",
   "typings": "dist/types/index.d.ts",
   "files": [
     "dist",
@@ -27,14 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.inwesure.com:AT-web-packages/ws-vue-preload.git"
+    "url": "https://github.com/kidjayhuang/vue-preload"
   },
   "keywords": [],
   "author": "kidjayhuang",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "http://nexus.inwesure.com/repository/npm-hosted/"
-  },
   "devDependencies": {
     "@babel/cli": "^7.12.17",
     "@babel/core": "^7.8.6",
@@ -45,7 +42,6 @@
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@types/jest": "^26.0.20",
-    "@wesure/eslint-config": "^0.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.2",

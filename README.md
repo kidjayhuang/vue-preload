@@ -11,7 +11,7 @@ v0.0.1
 ## 安装
 
 ``` bash
-npm install @wesure/ws-vue-preload
+npm install @kidjay/vue-preload
 ```
 ## 背景
 路由组件使用动态import，webpack会将单页面组件分成多个包，在执行路由跳转前才去加载资源，下载完才会跳转，这个包的
@@ -27,9 +27,9 @@ npm install @wesure/ws-vue-preload
 
 #### 引入
 ``` js
-import wsVuePreload from '@wesure/ws-vue-preload';
+import VuePreload from '@kidjay/vue-preload';
 
-Vue.use(wsVuePreload);
+Vue.use(VuePreload);
 ```
 
 使用方式一. 配置路由meta.preload属性，以下配置表示在home页会预加载large页的代码包

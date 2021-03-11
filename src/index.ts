@@ -7,15 +7,15 @@ let _Vue: VueConstructor; // bind on install
 // let _watcherVM;
 let router: VueRouter;
 function assert (condition: any, msg: string): void {
-    if (!condition) { throw new Error(("[ws-vue-preload] " + msg)); }
+    if (!condition) { throw new Error(("[vue-preload] " + msg)); }
 }
 
 function warn (msg: string): void {
-    console.warn("[ws-vue-preload] " + msg);
+    console.warn("[vue-preload] " + msg);
 }
 
 function log (msg: any): void {
-    console.log("[ws-vue-preload] ", msg);
+    console.log("[vue-preload] ", msg);
 }
 
 function _toRawType (value: any): string {
@@ -47,7 +47,7 @@ function install (Vue: VueConstructor): void {
     if (_Vue && Vue === _Vue) {
         if ((process.env.NODE_ENV !== 'production')) {
             console.error(
-                '[ws-vue-preload] already installed. Vue.use(WsVuePreload) should be called only once.'
+                '[vue-preload] already installed. Vue.use(VuePreload) should be called only once.'
             );
         }
         return;

@@ -52,7 +52,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'ws-vue-preload': path.join(__dirname, '../dist/ws-vue-preload.esm')
+      'vue-preload': path.join(__dirname, '../dist/vue-preload.esm')
     }
   },
 

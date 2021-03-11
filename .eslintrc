@@ -1,4 +1,3 @@
 {
-    "extends": "@wesure",
     "parser": "babel-eslint"
 }
